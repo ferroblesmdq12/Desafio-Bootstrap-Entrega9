@@ -1,0 +1,99 @@
+/* Importa la fuente Mulish Regular */
+@font-face {
+    font-family: 'Mulish';
+    src: url('fonts/mulish-regular.woff2') format('woff2'),
+         url('fonts/mulish-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Importa la fuente Mulish Bold */
+  @font-face {
+    font-family: 'Mulish';
+    src: url('fonts/mulish-bold.woff2') format('woff2'),
+         url('fonts/mulish-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+
+/* Estilos generales */
+section {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1 {
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    font-size: 49pt;
+    color:#04146c;
+    justify-content: center;
+}
+
+h2 {
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    font-size: 30pt;
+    color:#0a2ff1;
+    justify-content: center;
+}
+
+h3 {
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    font-size: 18pt;
+    color:#04146c;
+    justify-content: center;
+}
+
+p{
+    font-family: 'Mulish', sans-serif;
+    font-weight: regular;
+    font-size: 18pt;
+    color:#04146c;
+    justify-content: center;
+}
+
+/* Team */
+
+.experiencia {
+    padding: 40px 40px 60px 40px;
+}
+.seccion-clara {
+    color: black;
+    background-color: white;
+}
+
+.proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+}
+
+.proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.testimonio-imagen{
+    height: 150px;
+    width: 150px;
+    margin:10px 10px 20px 10px;
+    border-radius: 60%;
+}
+
+/* Boton */
+
+.btn {
+    font-family: 'Mulish', sans-serif;
+    font-weight: regular;
+    font-size: 18pt;
+    border: 2px solid #04146c;
+    color: #0a2ff1;
+}

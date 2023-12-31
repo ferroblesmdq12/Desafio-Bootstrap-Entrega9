@@ -1,0 +1,93 @@
+/* Importa la fuente usando @font-face */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 900; /* 900 es la versión negrita (Black) de la fuente */
+    src: local('Source Sans Pro Black'), local('SourceSansPro-Black'),
+         url('ruta/del/archivo/source-sans-pro-black.woff2') format('woff2'), /* Ruta a tu archivo WOFF2 */
+         url('ruta/del/archivo/source-sans-pro-black.woff') format('woff'); /* Ruta a tu archivo WOFF */
+  }
+
+  /* Importa la variante regular usando @font-face */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400; /* 400 es la versión regular de la fuente */
+    src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+         url('ruta/del/archivo/source-sans-pro-regular.woff2') format('woff2'), /* Ruta a tu archivo WOFF2 */
+         url('ruta/del/archivo/source-sans-pro-regular.woff') format('woff'); /* Ruta a tu archivo WOFF */
+  }
+  
+  /* Importa la variante italic usando @font-face */
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-style: italic;
+    font-weight: 400; /* 400 es la versión regular de la fuente */
+    src: local('Source Sans Pro Italic'), local('SourceSansPro-Italic'),
+         url('ruta/del/archivo/source-sans-pro-italic.woff2') format('woff2'), /* Ruta a tu archivo WOFF2 */
+         url('ruta/del/archivo/source-sans-pro-italic.woff') format('woff'); /* Ruta a tu archivo WOFF */
+  }
+
+  /* Estilos generales */
+
+  .text-img {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenedor {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  h1 {
+    font-family: 'Source Sans pro', sans-serif;
+    font-weight: normal;
+    font-variant: small-caps;
+    font-size: 62pt;
+    color:#04146c;
+    justify-content: center;
+  }
+
+  p {
+    font-family: 'Source Sans pro', sans-serif;
+    font-weight: italic & regular;
+    font-size: 16pt;
+    color:#04146c;
+  }
+
+  .btn{
+    background-color: #04146c;
+    font-family: 'Source Sans pro';
+    font-variant: small-caps;
+    text-transform: uppercase;
+    color: white;
+    width: 200px;
+    margin: 15px;
+  }
+
+  /*Adaptable (Responsivo)*/
+
+@media screen and (min-width: 768px) {
+    .text-img{
+        max-width: 100%;
+    }
+    .btn {
+        width: 80%;
+    }
+
+}
+
+@media screen and  (max-width: 768px){
+    .text-img {
+        max-width: 80%;
+    }
+    .imagen {
+        width: 100%;
+    }
+}
+
+
+
